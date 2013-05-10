@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController2.h"
+#import "ViewController1.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+//    ViewController2* vc = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
+//    vc.view.backgroundColor = [UIColor redColor];
+
+    ViewController1* vc = [[ViewController1 alloc] init];
+    vc.view.backgroundColor = [UIColor blueColor];
+    UINavigationController* nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     return YES;
 }
