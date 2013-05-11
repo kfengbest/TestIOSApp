@@ -59,4 +59,16 @@
     
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+   // [self.textField resignFirstResponder];
+    NSLog(@"typed: %@",self.textField.text);
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
+}
+
 @end
