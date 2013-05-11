@@ -16,6 +16,7 @@
 @property(nonatomic,weak) IBOutlet UITextField* textField;
 @property(nonatomic,weak) IBOutlet UIToolbar*   toolBar;
 @property(nonatomic,weak) IBOutlet UIBarButtonItem* searchButton;
+@property(nonatomic,weak) IBOutlet UICollectionView* collectionView;
 
 - (IBAction)shareButtonTabed:(id)sender;
 
@@ -28,6 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+
     }
     return self;
 }
@@ -46,6 +48,16 @@
     [self.searchButton setBackgroundImage:img2 forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     self.textField.background = [[UIImage imageNamed:@"search_field.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
+    
+    UINib* nib = [UINib nibWithNibName:@"FlickerViewCell"bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"FlickerViewCellID"];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(160, 200)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    [self.collectionView setCollectionViewLayout:flowLayout];
+    
     
 }
 
@@ -70,5 +82,25 @@
     [self.textField resignFirstResponder];
     return YES;
 }
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 20;
+}
+
+// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell* cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickerViewCellID"forIndexPath:indexPath];
+
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)cv didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+
 
 @end

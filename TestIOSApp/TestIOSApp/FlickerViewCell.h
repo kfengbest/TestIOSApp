@@ -1,5 +1,5 @@
 //
-//  ViewController3.h
+//  FlickerViewCell.h
 //  TestIOSApp
 //
 //  Created by Kaven Feng on 5/11/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController3 : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
-
+@interface FlickerViewCell : UICollectionViewCell
 
 @end
