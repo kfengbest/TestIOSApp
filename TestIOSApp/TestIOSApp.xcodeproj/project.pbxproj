@@ -39,6 +39,8 @@
 		12790E7C173DBA0100CB33BC /* search_field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12790E68173DBA0100CB33BC /* search_field@2x.png */; };
 		12790E7D173DBA0100CB33BC /* search_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 12790E69173DBA0100CB33BC /* search_text.png */; };
 		12790E7E173DBA0100CB33BC /* search_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12790E6A173DBA0100CB33BC /* search_text@2x.png */; };
+		12790E82173DBABF00CB33BC /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 12790E80173DBABF00CB33BC /* ViewController3.m */; };
+		12790E83173DBABF00CB33BC /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12790E81173DBABF00CB33BC /* ViewController3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,9 @@
 		12790E68173DBA0100CB33BC /* search_field@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_field@2x.png"; sourceTree = "<group>"; };
 		12790E69173DBA0100CB33BC /* search_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_text.png; sourceTree = "<group>"; };
 		12790E6A173DBA0100CB33BC /* search_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_text@2x.png"; sourceTree = "<group>"; };
+		12790E7F173DBABF00CB33BC /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		12790E80173DBABF00CB33BC /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		12790E81173DBABF00CB33BC /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,9 @@
 				12790E37173D3AA200CB33BC /* Supporting Files */,
 				12790E52173D44DC00CB33BC /* ViewController1.h */,
 				12790E53173D44DC00CB33BC /* ViewController1.m */,
+				12790E7F173DBABF00CB33BC /* ViewController3.h */,
+				12790E80173DBABF00CB33BC /* ViewController3.m */,
+				12790E81173DBABF00CB33BC /* ViewController3.xib */,
 			);
 			path = TestIOSApp;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 				12790E7C173DBA0100CB33BC /* search_field@2x.png in Resources */,
 				12790E7D173DBA0100CB33BC /* search_text.png in Resources */,
 				12790E7E173DBA0100CB33BC /* search_text@2x.png in Resources */,
+				12790E83173DBABF00CB33BC /* ViewController3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +279,7 @@
 				12790E41173D3AA200CB33BC /* AppDelegate.m in Sources */,
 				12790E50173D3BDC00CB33BC /* ViewController2.m in Sources */,
 				12790E54173D44DC00CB33BC /* ViewController1.m in Sources */,
+				12790E82173DBABF00CB33BC /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
